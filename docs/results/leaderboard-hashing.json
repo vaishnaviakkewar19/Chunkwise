@@ -1,0 +1,2298 @@
+[
+  {
+    "Strategy": "fixed",
+    "Label": "Fixed-size",
+    "Enriched": false,
+    "ChunkCount": 61,
+    "AverageChunkLength": 489.44262295081967,
+    "AverageRetrievedLength": 489.44262295081967,
+    "RecallAt1": 0.8,
+    "RecallAt3": 0.9,
+    "Mrr": 0.8527777777777779,
+    "CoverageAt3": 0.8646401401452137,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 3,
+        "CoverageAt3": 0.7010309278350515
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.7160493827160493
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.5221238938053098
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "fixed",
+    "Label": "Fixed-size \u002B context",
+    "Enriched": true,
+    "ChunkCount": 61,
+    "AverageChunkLength": 489.44262295081967,
+    "AverageRetrievedLength": 489.44262295081967,
+    "RecallAt1": 0.7333333333333333,
+    "RecallAt3": 0.9,
+    "Mrr": 0.816984126984127,
+    "CoverageAt3": 0.8646401401452137,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 3,
+        "CoverageAt3": 0.7010309278350515
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 7,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.7160493827160493
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.5221238938053098
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "sentence",
+    "Label": "Sentence",
+    "Enriched": false,
+    "ChunkCount": 62,
+    "AverageChunkLength": 442.9516129032258,
+    "AverageRetrievedLength": 442.9516129032258,
+    "RecallAt1": 0.7666666666666667,
+    "RecallAt3": 0.8666666666666667,
+    "Mrr": 0.8345238095238094,
+    "CoverageAt3": 0.8409761375626547,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9963702359346642
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 7,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 7,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.23809523809523808
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9948186528497409
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "sentence",
+    "Label": "Sentence \u002B context",
+    "Enriched": true,
+    "ChunkCount": 62,
+    "AverageChunkLength": 442.9516129032258,
+    "AverageRetrievedLength": 442.9516129032258,
+    "RecallAt1": 0.8,
+    "RecallAt3": 0.8666666666666667,
+    "Mrr": 0.8490740740740741,
+    "CoverageAt3": 0.8502205128687361,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.5117967332123412
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 9,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 9,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9948186528497409
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "paragraph",
+    "Label": "Paragraph",
+    "Enriched": false,
+    "ChunkCount": 166,
+    "AverageChunkLength": 160.7289156626506,
+    "AverageRetrievedLength": 160.7289156626506,
+    "RecallAt1": 0.36666666666666664,
+    "RecallAt3": 0.6,
+    "Mrr": 0.5363888888888888,
+    "CoverageAt3": 0.5837265577737447,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 8,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 0.5117967332123412
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 6,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "paragraph",
+    "Label": "Paragraph \u002B context",
+    "Enriched": true,
+    "ChunkCount": 166,
+    "AverageChunkLength": 160.7289156626506,
+    "AverageRetrievedLength": 160.7289156626506,
+    "RecallAt1": 0.43333333333333335,
+    "RecallAt3": 0.8333333333333334,
+    "Mrr": 0.6488888888888888,
+    "CoverageAt3": 0.8170598911070781,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.5117967332123412
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 10,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "recursive",
+    "Label": "Recursive (LangChain)",
+    "Enriched": false,
+    "ChunkCount": 80,
+    "AverageChunkLength": 348.1625,
+    "AverageRetrievedLength": 348.1625,
+    "RecallAt1": 0.7333333333333333,
+    "RecallAt3": 0.9666666666666667,
+    "Mrr": 0.8388888888888889,
+    "CoverageAt3": 0.9665456745311555,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9963702359346642
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "recursive",
+    "Label": "Recursive (LangChain) \u002B context",
+    "Enriched": true,
+    "ChunkCount": 80,
+    "AverageChunkLength": 348.1625,
+    "AverageRetrievedLength": 348.1625,
+    "RecallAt1": 0.7666666666666667,
+    "RecallAt3": 0.9666666666666667,
+    "Mrr": 0.8555555555555556,
+    "CoverageAt3": 0.9665456745311555,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9963702359346642
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "markdown",
+    "Label": "Markdown headers",
+    "Enriched": false,
+    "ChunkCount": 95,
+    "AverageChunkLength": 282.3157894736842,
+    "AverageRetrievedLength": 282.3157894736842,
+    "RecallAt1": 0.7333333333333333,
+    "RecallAt3": 0.9666666666666667,
+    "Mrr": 0.8388888888888888,
+    "CoverageAt3": 0.9665456745311555,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9963702359346642
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "markdown",
+    "Label": "Markdown headers \u002B context",
+    "Enriched": true,
+    "ChunkCount": 95,
+    "AverageChunkLength": 282.3157894736842,
+    "AverageRetrievedLength": 282.3157894736842,
+    "RecallAt1": 0.7666666666666667,
+    "RecallAt3": 0.9,
+    "Mrr": 0.8444444444444444,
+    "CoverageAt3": 0.8998790078644887,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9963702359346642
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "semantic",
+    "Label": "Semantic",
+    "Enriched": false,
+    "ChunkCount": 110,
+    "AverageChunkLength": 243.78181818181818,
+    "AverageRetrievedLength": 243.78181818181818,
+    "RecallAt1": 0.4666666666666667,
+    "RecallAt3": 0.8333333333333334,
+    "Mrr": 0.6525,
+    "CoverageAt3": 0.8319970634200443,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 8,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.9963702359346642
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 0.9635416666666666
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "semantic",
+    "Label": "Semantic \u002B context",
+    "Enriched": true,
+    "ChunkCount": 110,
+    "AverageChunkLength": 243.78181818181818,
+    "AverageRetrievedLength": 243.78181818181818,
+    "RecallAt1": 0.6,
+    "RecallAt3": 0.9,
+    "Mrr": 0.7511111111111111,
+    "CoverageAt3": 0.882511279995967,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 0.5117967332123412
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 6,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 5,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 0.9635416666666666
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "parent-child",
+    "Label": "Parent-child",
+    "Enriched": false,
+    "ChunkCount": 98,
+    "AverageChunkLength": 274.1326530612245,
+    "AverageRetrievedLength": 602.265306122449,
+    "RecallAt1": 0.8333333333333334,
+    "RecallAt3": 0.9666666666666667,
+    "Mrr": 0.8944444444444444,
+    "CoverageAt3": 0.9666666666666667,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  },
+  {
+    "Strategy": "parent-child",
+    "Label": "Parent-child \u002B context",
+    "Enriched": true,
+    "ChunkCount": 98,
+    "AverageChunkLength": 274.1326530612245,
+    "AverageRetrievedLength": 602.265306122449,
+    "RecallAt1": 0.8666666666666667,
+    "RecallAt3": 0.9333333333333333,
+    "Mrr": 0.9027777777777778,
+    "CoverageAt3": 0.9333333333333333,
+    "Questions": [
+      {
+        "QuestionId": "hb-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-07",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-08",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-09",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-10",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-11",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-12",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "hb-13",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-01",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "bn-06",
+        "FirstHitRank": 4,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "bn-07",
+        "FirstHitRank": 3,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-01",
+        "FirstHitRank": 2,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-05",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "api-06",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-01",
+        "FirstHitRank": null,
+        "CoverageAt3": 0
+      },
+      {
+        "QuestionId": "faq-02",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-03",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      },
+      {
+        "QuestionId": "faq-04",
+        "FirstHitRank": 1,
+        "CoverageAt3": 1
+      }
+    ]
+  }
+]

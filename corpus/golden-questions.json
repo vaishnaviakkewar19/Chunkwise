@@ -1,0 +1,221 @@
+{
+  "description": "Golden evaluation set for Chunkwise. Each 'answer' is an exact substring of 'document'; offsets are resolved at load time so the corpus can be edited without hand-maintaining character positions.",
+  "questions": [
+    {
+      "id": "hb-01",
+      "question": "What are the core collaboration hours?",
+      "document": "employee-handbook.md",
+      "answer": "Our core collaboration hours are 10:00 to 15:00 in your local time zone, Monday to Friday.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-02",
+      "question": "How much is the remote work stipend each month?",
+      "document": "employee-handbook.md",
+      "answer": "This policy provides a monthly payment of $75 to every employee who works from home at least one day per week.",
+      "tags": ["prose", "coreference"],
+      "note": "'This policy' only makes sense with the heading 'Remote Work Stipend' - small chunks lose that context unless contextual enrichment is on."
+    },
+    {
+      "id": "hb-03",
+      "question": "How many days can I work from another country?",
+      "document": "employee-handbook.md",
+      "answer": "You may work from another country for up to 20 working days in any rolling twelve-month period.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-04",
+      "question": "How many days of annual leave do full-time employees get?",
+      "document": "employee-handbook.md",
+      "answer": "Full-time employees receive 25 days of paid annual leave per calendar year, in addition to public holidays.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-05",
+      "question": "Until when can I use leave carried over from last year?",
+      "document": "employee-handbook.md",
+      "answer": "Carried-over days must be used by the end of March, after which they expire.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-06",
+      "question": "When do I need a doctor's note for sick leave?",
+      "document": "employee-handbook.md",
+      "answer": "For absences longer than five consecutive working days, a note from a doctor or other qualified clinician is required.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-07",
+      "question": "How much paid parental leave does someone with only four months of service receive?",
+      "document": "employee-handbook.md",
+      "answer": "Brightwell Health offers 18 weeks of fully paid parental leave to every new parent, regardless of gender or of whether the child joins the family through birth, adoption or surrogacy. The leave can be taken in a single block or split into up to three separate blocks.\n\nTo qualify for the full 18 weeks, you must have completed six months of continuous service by the expected date of birth or placement. Employees with shorter service still receive the leave, but the paid portion is reduced to six weeks, with the remainder available as unpaid leave.",
+      "tags": ["prose", "multi-paragraph"],
+      "note": "The full answer needs both paragraphs: the headline entitlement and the service-length exception."
+    },
+    {
+      "id": "hb-08",
+      "question": "Can I work fewer days when I come back from parental leave?",
+      "document": "employee-handbook.md",
+      "answer": "Parents returning from leave may work a reduced schedule of three days per week at full pay for their first four weeks back.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-09",
+      "question": "How many days off are given when a close family member dies?",
+      "document": "employee-handbook.md",
+      "answer": "Employees may take up to ten days of paid bereavement leave following the death of a close family member, and up to three days for the death of a friend or extended relative.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-10",
+      "question": "Who must approve a business class flight?",
+      "document": "employee-handbook.md",
+      "answer": "Premium economy may be booked for flights longer than six hours, and business class requires approval from a vice president.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-11",
+      "question": "What is the daily meal allowance when travelling?",
+      "document": "employee-handbook.md",
+      "answer": "When travelling on company business, you may spend up to $60 per day on meals, excluding alcohol.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-12",
+      "question": "What is the deadline for submitting expenses?",
+      "document": "employee-handbook.md",
+      "answer": "Expenses must be submitted within 30 days of being incurred, using the Expenses app with a photo of each receipt attached.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "hb-13",
+      "question": "How quickly must I report exposed patient data?",
+      "document": "employee-handbook.md",
+      "answer": "If you believe patient data has been exposed, report it to the Privacy Office within one hour of discovery, even if you are unsure.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "bn-01",
+      "question": "What is the annual deductible on the Gold plan?",
+      "document": "benefits-guide.md",
+      "answer": "| Gold      | $120                     | $500              | $2,500                | 10%         |",
+      "tags": ["table"],
+      "note": "The row is meaningless without the header row - splitting a table loses the column names."
+    },
+    {
+      "id": "bn-02",
+      "question": "How much is a specialist visit copay on the Silver plan?",
+      "document": "benefits-guide.md",
+      "answer": "| Specialist visit           | $80    | $50    | $30  |",
+      "tags": ["table"]
+    },
+    {
+      "id": "bn-03",
+      "question": "Why are virtual visits free?",
+      "document": "benefits-guide.md",
+      "answer": "Virtual visits are free on every tier because Brightwell Health wants employees to seek advice early rather than wait until a minor problem becomes a serious one.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "bn-04",
+      "question": "What is the annual dental limit for fillings and crowns?",
+      "document": "benefits-guide.md",
+      "answer": "The annual limit for basic and major treatment is $1,750 per covered person.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "bn-05",
+      "question": "Does the company match retirement contributions?",
+      "document": "benefits-guide.md",
+      "answer": "Brightwell Health matches employee contributions to the retirement plan dollar-for-dollar up to 5% of base salary.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "bn-06",
+      "question": "Will my boss find out if I see a therapist?",
+      "document": "benefits-guide.md",
+      "answer": "Brightwell Health never receives the names of people who use the programme.",
+      "tags": ["prose", "no-keyword-overlap"],
+      "note": "No content words in common with the answer - only a semantic embedder can bridge 'boss/therapist' to 'names/programme'."
+    },
+    {
+      "id": "bn-07",
+      "question": "When can I change my medical plan?",
+      "document": "benefits-guide.md",
+      "answer": "Open enrolment runs from 1 to 30 November each year.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "api-01",
+      "question": "How long do API access tokens last?",
+      "document": "api-docs.md",
+      "answer": "Tokens expire after 3600 seconds; request a new one shortly before expiry rather than waiting for a 401 response.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "api-02",
+      "question": "What happens when I exceed the rate limit?",
+      "document": "api-docs.md",
+      "answer": "When you exceed the limit, the API returns HTTP 429 Too Many Requests with a `Retry-After` header indicating how many seconds to wait.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "api-03",
+      "question": "How do I avoid creating duplicate appointments when retrying after a network error?",
+      "document": "api-docs.md",
+      "answer": "If a network failure means you are unsure whether the booking succeeded, resend the same request with the same key: the API will return the original appointment instead of creating a duplicate.",
+      "tags": ["prose", "coreference"],
+      "note": "'the same key' refers to the Idempotency-Key header introduced in the previous sentence."
+    },
+    {
+      "id": "api-04",
+      "question": "How do I verify a webhook signature in C#?",
+      "document": "api-docs.md",
+      "answer": "static bool IsValidSignature(string rawBody, string signatureHeader, string secret)\n{\n    using var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(secret));\n    var expected = hmac.ComputeHash(Encoding.UTF8.GetBytes(rawBody));\n    var provided = Convert.FromHexString(signatureHeader);\n    return CryptographicOperations.FixedTimeEquals(expected, provided);\n}",
+      "tags": ["code"]
+    },
+    {
+      "id": "api-05",
+      "question": "What status does an appointment get if it is cancelled the day before?",
+      "document": "api-docs.md",
+      "answer": "Cancellations made less than 24 hours before the start time are still accepted, but the appointment is marked as `late-cancelled` so that clinics can report on short-notice changes.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "api-06",
+      "question": "What is the maximum date range when searching for slots?",
+      "document": "api-docs.md",
+      "answer": "The range may not exceed 14 days, and results are sorted by start time.",
+      "tags": ["prose"]
+    },
+    {
+      "id": "faq-01",
+      "question": "I keep typing the wrong credentials and now I'm shut out of my computer - what now?",
+      "document": "it-faq.md",
+      "answer": "A: Accounts lock automatically following five failed sign-ins. Wait fifteen minutes, or ring the Service Desk on extension 4357 for an immediate unlock.",
+      "tags": ["faq", "no-keyword-overlap"],
+      "note": "Deliberately shares no content words with the answer: a bag-of-words embedder should struggle here."
+    },
+    {
+      "id": "faq-02",
+      "question": "I clicked a link in a phishing email by mistake. Will I be disciplined?",
+      "document": "it-faq.md",
+      "answer": "A: No. Report it to the security team straight away so they can check your account. Fast reporting limits the damage, and nobody is disciplined for an honest mistake that they report promptly.",
+      "tags": ["faq"]
+    },
+    {
+      "id": "faq-03",
+      "question": "When do I need the VPN?",
+      "document": "it-faq.md",
+      "answer": "A: Most applications are available directly over the internet with single sign-on. The VPN is only needed for legacy finance systems and for administrators working on production infrastructure.",
+      "tags": ["faq"]
+    },
+    {
+      "id": "faq-04",
+      "question": "How long do Secure Share links stay valid?",
+      "document": "it-faq.md",
+      "answer": "Secure Share links expire after seven days and record who opened the file.",
+      "tags": ["faq"]
+    }
+  ]
+}

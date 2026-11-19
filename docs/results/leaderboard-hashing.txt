@@ -1,0 +1,39 @@
+﻿Corpus: 4 documents, 30 golden questions
+Embedder: hashing-bow-1024 | chunk size 500 | overlap 50
+
+
+Strategy                         Chunks  Avg size  Returned  Recall@1  Recall@3     MRR  Coverage@3
+---------------------------------------------------------------------------------------------------
+Fixed-size                           61       489       489      0.80      0.90    0.85        0.86  ██████████████████
+Fixed-size + context                 61       489       489      0.73      0.90    0.82        0.86  ██████████████████
+Sentence                             62       443       443      0.77      0.87    0.83        0.84  █████████████████
+Sentence + context                   62       443       443      0.80      0.87    0.85        0.85  █████████████████
+Paragraph                           166       161       161      0.37      0.60    0.54        0.58  ████████████
+Paragraph + context                 166       161       161      0.43      0.83    0.65        0.82  █████████████████
+Recursive (LangChain)                80       348       348      0.73      0.97    0.84        0.97  ███████████████████
+Recursive (LangChain) + context      80       348       348      0.77      0.97    0.86        0.97  ███████████████████
+Markdown headers                     95       282       282      0.73      0.97    0.84        0.97  ███████████████████
+Markdown headers + context           95       282       282      0.77      0.90    0.84        0.90  ██████████████████
+Semantic                            110       244       244      0.47      0.83    0.65        0.83  █████████████████
+Semantic + context                  110       244       244      0.60      0.90    0.75        0.88  ██████████████████
+Parent-child                         98       274       602      0.83      0.97    0.89        0.97  ███████████████████
+Parent-child + context               98       274       602      0.87      0.93    0.90        0.93  ███████████████████
+
+| Strategy | Chunks | Avg size | Returned | Recall@1 | Recall@3 | MRR | Coverage@3 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Fixed-size | 61 | 489 | 489 | 0.80 | 0.90 | 0.85 | 0.86 |
+| Fixed-size + context | 61 | 489 | 489 | 0.73 | 0.90 | 0.82 | 0.86 |
+| Sentence | 62 | 443 | 443 | 0.77 | 0.87 | 0.83 | 0.84 |
+| Sentence + context | 62 | 443 | 443 | 0.80 | 0.87 | 0.85 | 0.85 |
+| Paragraph | 166 | 161 | 161 | 0.37 | 0.60 | 0.54 | 0.58 |
+| Paragraph + context | 166 | 161 | 161 | 0.43 | 0.83 | 0.65 | 0.82 |
+| Recursive (LangChain) | 80 | 348 | 348 | 0.73 | **0.97** | 0.84 | **0.97** |
+| Recursive (LangChain) + context | 80 | 348 | 348 | 0.77 | **0.97** | 0.86 | **0.97** |
+| Markdown headers | 95 | 282 | 282 | 0.73 | **0.97** | 0.84 | **0.97** |
+| Markdown headers + context | 95 | 282 | 282 | 0.77 | 0.90 | 0.84 | 0.90 |
+| Semantic | 110 | 244 | 244 | 0.47 | 0.83 | 0.65 | 0.83 |
+| Semantic + context | 110 | 244 | 244 | 0.60 | 0.90 | 0.75 | 0.88 |
+| Parent-child | 98 | 274 | 602 | 0.83 | **0.97** | 0.89 | **0.97** |
+| Parent-child + context | 98 | 274 | 602 | **0.87** | 0.93 | **0.90** | 0.93 |
+
+Wrote docs/results/leaderboard-hashing.json

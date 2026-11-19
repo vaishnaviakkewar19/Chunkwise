@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>chunkwise</AssemblyName>
+    <RootNamespace>Chunkwise.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chunkwise.Core\Chunkwise.Core.csproj" />
+  </ItemGroup>
+</Project>

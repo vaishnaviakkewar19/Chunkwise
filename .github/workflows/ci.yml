@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+# A newer push to the same branch cancels the older run.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build & test (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        # Windows as well as Linux: it proves CRLF checkouts don't shift any character offsets.
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Restore
+        run: dotnet restore Chunkwise.sln
+
+      - name: Build
+        run: dotnet build Chunkwise.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test Chunkwise.sln --configuration Release --no-build --logger "trx;LogFileName=test-results.trx" --results-directory TestResults
+
+      # The offline embedder needs no model, so CI can publish a real leaderboard on every push.
+      - name: Leaderboard (offline hashing embedder)
+        if: matrix.os == 'ubuntu-latest'
+        shell: bash
+        run: |
+          {
+            echo "## Chunkwise leaderboard (hashing embedder, size 500, overlap 50)"
+            echo
+            dotnet run --project src/Chunkwise.Cli --configuration Release --no-build -- eval --markdown 2>/dev/null | sed -n '/^| Strategy/,$p'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.os }}
+          path: TestResults

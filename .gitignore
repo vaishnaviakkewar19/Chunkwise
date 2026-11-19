@@ -1,0 +1,27 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+.vs/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+TestResults/
+*.trx
+*.coverage
+coverage*.xml
+artifacts/
+publish/
+*.nupkg
+
+## Rider / JetBrains
+.idea/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Chunkwise runtime artefacts
+.chunkwise-cache/

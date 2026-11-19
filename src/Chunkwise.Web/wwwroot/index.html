@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chunkwise: see how chunking changes retrieval</title>
+  <meta name="description" content="A visual lab comparing RAG chunking strategies on a synthetic knowledge base.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='3' width='6' height='18' rx='2' fill='%232a78d6'/%3E%3Crect x='9' y='9' width='6' height='12' rx='2' fill='%23eb6834'/%3E%3Crect x='16' y='6' width='6' height='15' rx='2' fill='%232a78d6' opacity='.45'/%3E%3C/svg%3E">
+  <!-- Apply the saved theme before first paint so there is no light/dark flash. -->
+  <script>
+    const t = localStorage.getItem("chunkwise-theme");
+    if (t) document.documentElement.dataset.theme = t;
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#visualize">
+        <div class="logo" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div>
+          <h1>Chunkwise</h1>
+          <p>See how chunking changes retrieval</p>
+        </div>
+      </a>
+      <nav class="tabs" role="tablist" aria-label="Views">
+        <button class="tab" role="tab" data-tab="visualize" aria-selected="true">Visualize</button>
+        <button class="tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+        <button class="tab" role="tab" data-tab="ask" aria-selected="false">Ask</button>
+        <button class="tab" role="tab" data-tab="leaderboard" aria-selected="false">Leaderboard</button>
+      </nav>
+      <div class="topbar-right">
+        <span class="pill" title="Embedding model in use"><span class="dot"></span><span id="embedder-name">loading…</span></span>
+        <button class="icon-btn" id="theme-toggle" title="Toggle light / dark" aria-label="Toggle light or dark theme">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="embedder-warning" class="banner hidden" role="status"></div>
+
+  <main>
+    <!-- Shared controls: every view reads these, and moving a slider re-runs the current view. -->
+    <section class="controls" aria-label="Chunking settings">
+      <div class="control" data-views="visualize compare">
+        <label for="doc-select">Document</label>
+        <select id="doc-select"></select>
+      </div>
+      <div class="control">
+        <label for="size">Chunk size</label>
+        <input type="range" id="size" min="100" max="1500" step="25" value="500">
+        <output id="size-out" for="size">500</output>
+      </div>
+      <div class="control">
+        <label for="overlap">Overlap</label>
+        <input type="range" id="overlap" min="0" max="300" step="10" value="50">
+        <output id="overlap-out" for="overlap">50</output>
+      </div>
+      <label class="switch" data-views="ask" title="Prepend 'document > section:' to each chunk before embedding">
+        <input type="checkbox" id="enrich"> Contextual enrichment
+      </label>
+      <span class="muted small" id="controls-hint" data-views="visualize compare">Hover a chunk for its metadata · striped = overlap</span>
+    </section>
+
+    <!-- ===================== Visualize ===================== -->
+    <section id="view-visualize" class="view" role="tabpanel">
+      <div class="intro">
+        <h2>Chunk visualizer</h2>
+        <p>Each colour is one chunk. Striped, darker text is covered by two chunks (overlap). Pick a strategy and drag the sliders to watch boundaries move.</p>
+      </div>
+      <div class="segmented" id="strategy-buttons" role="group" aria-label="Chunking strategy"></div>
+      <p class="strategy-desc" id="strategy-desc"></p>
+      <div class="stats" id="viz-stats"></div>
+      <div class="size-strip" id="size-strip" aria-label="Chunk lengths, one bar per chunk"></div>
+      <div class="doc" id="viz-doc" aria-live="polite"></div>
+    </section>
+
+    <!-- ===================== Compare ===================== -->
+    <section id="view-compare" class="view hidden" role="tabpanel">
+      <div class="intro">
+        <h2>Side-by-side compare</h2>
+        <p>Same document, same settings, two strategies. Scrolling is synced so you can see where boundaries differ.</p>
+      </div>
+      <div class="compare-grid">
+        <div>
+          <div class="pane-head"><select id="cmp-left" aria-label="Left strategy"></select><span class="muted" id="cmp-left-stats"></span></div>
+          <div class="doc" id="cmp-left-doc"></div>
+        </div>
+        <div>
+          <div class="pane-head"><select id="cmp-right" aria-label="Right strategy"></select><span class="muted" id="cmp-right-stats"></span></div>
+          <div class="doc" id="cmp-right-doc"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Ask ===================== -->
+    <section id="view-ask" class="view hidden" role="tabpanel">
+      <div class="intro">
+        <h2>Ask a question</h2>
+        <p>Every strategy retrieves its top 3 chunks. Pick a golden question to see which strategies actually return the passage that answers it.</p>
+      </div>
+      <form class="ask-bar" id="ask-form">
+        <input type="text" id="question" placeholder="e.g. How much is the remote work stipend each month?" aria-label="Question" autocomplete="off">
+        <button class="btn" id="ask-btn" type="submit">Ask</button>
+      </form>
+      <div class="example-row">
+        <label for="golden-select">Try a golden question</label>
+        <select id="golden-select"><option value="">— choose —</option></select>
+        <span id="golden-tags"></span>
+      </div>
+      <p class="note hidden" id="golden-note"></p>
+      <div class="results-grid" id="ask-results"><div class="empty">Ask something to compare strategies.</div></div>
+      <div class="card source-viewer hidden" id="source-viewer">
+        <div class="card-head">
+          <h3 id="source-title"></h3>
+          <div class="legend-row">
+            <span class="key"><span class="swatch" style="background:var(--accent-soft);box-shadow:0 0 0 1px var(--accent)"></span>Retrieved text</span>
+            <span class="key"><span class="swatch" style="border-bottom:2px solid var(--answer)"></span>Expected answer</span>
+          </div>
+        </div>
+        <div class="doc" id="source-doc"></div>
+      </div>
+    </section>
+
+    <!-- ===================== Leaderboard ===================== -->
+    <section id="view-leaderboard" class="view hidden" role="tabpanel">
+      <div class="intro">
+        <h2>Leaderboard</h2>
+        <p>All golden questions against every strategy, with and without contextual enrichment, at the current chunk size and overlap. A hit means a retrieved chunk overlaps the expected passage.</p>
+      </div>
+      <div class="lb-grid">
+        <div class="card chart">
+          <div class="card-head">
+            <h3 id="chart-title">Recall@3 by strategy</h3>
+            <div class="segmented" id="metric-buttons" role="group" aria-label="Metric"></div>
+          </div>
+          <div class="legend" id="chart-legend">
+            <span class="key"><span class="swatch" style="background:var(--series-1)"></span>Plain chunk</span>
+            <span class="key"><span class="swatch" style="background:var(--series-2)"></span>+ document &gt; section context</span>
+          </div>
+          <div id="chart"></div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h3>Metrics</h3><span class="muted small" id="lb-meta"></span></div>
+          <table class="metrics" id="metrics-table"></table>
+          <p class="muted small" style="margin:10px 0 0">
+            <b>Recall@k</b>: share of questions with a hit in the top k. <b>MRR</b>: mean of 1/rank of the first hit.
+            <b>Coverage@3</b>: share of the answer's characters inside the top 3 chunks. Best value per column is highlighted.
+          </p>
+        </div>
+      </div>
+      <div class="card heatmap-wrap">
+        <div class="card-head">
+          <h3>Rank of the first correct chunk, per question</h3>
+          <div class="legend-row">
+            <span class="key"><span class="swatch r1"></span>1</span>
+            <span class="key"><span class="swatch r2"></span>2</span>
+            <span class="key"><span class="swatch r3"></span>3</span>
+            <span class="key"><span class="swatch r4"></span>4–10</span>
+            <span class="key"><span class="swatch rmiss"></span>not found</span>
+          </div>
+        </div>
+        <div id="heatmap"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="tooltip hidden" id="tooltip" role="tooltip"></div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

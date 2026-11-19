@@ -1,0 +1,87 @@
+﻿Corpus: 4 documents, 30 golden questions
+Embedder: ollama-nomic-embed-text | chunk size 500 | overlap 50
+
+
+Strategy                         Chunks  Avg size  Returned  Recall@1  Recall@3     MRR  Coverage@3
+---------------------------------------------------------------------------------------------------
+Fixed-size                           61       489       489      0.87      0.97    0.92        0.96  ███████████████████
+Fixed-size + context                 61       489       489      0.83      0.93    0.88        0.93  ███████████████████
+Sentence                             62       443       443      0.80      0.97    0.88        0.97  ███████████████████
+Sentence + context                   62       443       443      0.73      0.93    0.85        0.93  ███████████████████
+Paragraph                           166       161       161      0.80      0.93    0.88        0.93  ███████████████████
+Paragraph + context                 166       161       161      0.90      0.97    0.93        0.97  ███████████████████
+Recursive (LangChain)                80       348       348      0.83      0.97    0.89        0.97  ███████████████████
+Recursive (LangChain) + context      80       348       348      0.83      0.97    0.90        0.97  ███████████████████
+Markdown headers                     95       282       282      0.87      0.97    0.91        0.97  ███████████████████
+Markdown headers + context           95       282       282      0.90      0.97    0.94        0.97  ███████████████████
+Semantic                            115       233       233      0.80      0.93    0.87        0.92  ███████████████████
+Semantic + context                  115       233       233      0.87      0.97    0.92        0.96  ███████████████████
+Parent-child                         98       274       602      0.93      0.97    0.95        0.97  ███████████████████
+Parent-child + context               98       274       602      0.93      0.97    0.95        0.97  ███████████████████
+
+First-hit rank per question (- = not in top 10)
+  S1 = Fixed-size
+  S2 = Fixed-size + context
+  S3 = Sentence
+  S4 = Sentence + context
+  S5 = Paragraph
+  S6 = Paragraph + context
+  S7 = Recursive (LangChain)
+  S8 = Recursive (LangChain) + context
+  S9 = Markdown headers
+  S10 = Markdown headers + context
+  S11 = Semantic
+  S12 = Semantic + context
+  S13 = Parent-child
+  S14 = Parent-child + context
+
+Question    S1  S2  S3  S4  S5  S6  S7  S8  S9 S10 S11 S12 S13 S14
+hb-01        1   1   1   1   1   1   1   1   1   1   1   1   1   1  What are the core collaboration hours?
+hb-02        1   2   1   2   2   1   1   1   1   1   1   1   1   1  How much is the remote work stipend each month?
+hb-03        1   1   2   2   1   1   1   1   1   1   1   1   1   1  How many days can I work from another country?
+hb-04        1   1   1   1   1   1   1   1   1   1   1   1   1   1  How many days of annual leave do full-time employees get?
+hb-05        1   1   1   1   1   1   1   1   1   1   1   1   1   1  Until when can I use leave carried over from last year?
+hb-06        1   1   1   1   1   1   1   1   1   1   1   1   1   1  When do I need a doctor's note for sick leave?
+hb-07        1   1   1   1   1   1   1   1   1   1   1   1   1   1  How much paid parental leave does someone with only four months of service receive?
+hb-08        2   1   1   1   1   1   1   1   1   1   1   1   1   1  Can I work fewer days when I come back from parental leave?
+hb-09        1   1   1   1   1   1   1   1   1   1   1   1   1   1  How many days off are given when a close family member dies?
+hb-10        1   1   1   1   1   1   1   1   1   1   1   1   1   1  Who must approve a business class flight?
+hb-11        1   1   1   1   1   1   1   1   1   1   1   1   1   1  What is the daily meal allowance when travelling?
+hb-12        1   1   1   2   1   1   1   1   1   1   1   1   1   1  What is the deadline for submitting expenses?
+hb-13        1   1   1   1   1   1   1   1   1   1   1   1   1   1  How quickly must I report exposed patient data?
+bn-01        1   1   1   1   1   1   1   1   1   1   2   1   1   1  What is the annual deductible on the Gold plan?
+bn-02        1   1   3   1   2   1   1   1   2   1   6   2   1   1  How much is a specialist visit copay on the Silver plan?
+bn-03        1   6   1   1   1   1   1   1   1   1   1   1   1   1  Why are virtual visits free?
+bn-04        1   1   1   1   2   1   2   2   2   1   1   1   1   1  What is the annual dental limit for fillings and crowns?
+bn-05        1   1   2   2   1   1   1   1   1   1   1   1   1   1  Does the company match retirement contributions?
+bn-06        -   -   3   6   -   -   -   -  10   8   -   -   9   8  Will my boss find out if I see a therapist?
+bn-07        2   1   5   5   1   1   1   1   1   1   1   1   1   1  When can I change my medical plan?
+api-01       1   1   1   1   1   1   1   1   1   1   1   1   1   1  How long do API access tokens last?
+api-02       2   2   2   2   2   1   2   2   1   1   2   1   2   1  What happens when I exceed the rate limit?
+api-03       1   3   1   2   1   2   2   2   1   2   1   1   1   2  How do I avoid creating duplicate appointments when retrying after a network error?
+api-04       1   1   1   1   4   2   3   2   3   2   2   2   1   1  How do I verify a webhook signature in C#?
+api-05       1   1   1   1   1   1   1   1   1   1   1   1   1   1  What status does an appointment get if it is cancelled the day before?
+api-06       1   1   1   1   1   1   1   1   1   1   1   1   1   1  What is the maximum date range when searching for slots?
+faq-01       1   1   1   1   1   1   1   1   1   1   1   1   1   1  I keep typing the wrong credentials and now I'm shut out of my computer - what now?
+faq-02       1   1   1   1   1   1   1   1   1   1   2   2   1   1  I clicked a link in a phishing email by mistake. Will I be disciplined?
+faq-03       1   1   1   1   1   1   1   1   1   1   1   1   1   1  When do I need the VPN?
+faq-04       1   1   1   1   1   1   1   1   1   1   1   1   1   1  How long do Secure Share links stay valid?
+
+| Strategy | Chunks | Avg size | Returned | Recall@1 | Recall@3 | MRR | Coverage@3 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Fixed-size | 61 | 489 | 489 | 0.87 | **0.97** | 0.92 | 0.96 |
+| Fixed-size + context | 61 | 489 | 489 | 0.83 | 0.93 | 0.88 | 0.93 |
+| Sentence | 62 | 443 | 443 | 0.80 | **0.97** | 0.88 | **0.97** |
+| Sentence + context | 62 | 443 | 443 | 0.73 | 0.93 | 0.85 | 0.93 |
+| Paragraph | 166 | 161 | 161 | 0.80 | 0.93 | 0.88 | 0.93 |
+| Paragraph + context | 166 | 161 | 161 | 0.90 | **0.97** | 0.93 | **0.97** |
+| Recursive (LangChain) | 80 | 348 | 348 | 0.83 | **0.97** | 0.89 | **0.97** |
+| Recursive (LangChain) + context | 80 | 348 | 348 | 0.83 | **0.97** | 0.90 | **0.97** |
+| Markdown headers | 95 | 282 | 282 | 0.87 | **0.97** | 0.91 | **0.97** |
+| Markdown headers + context | 95 | 282 | 282 | 0.90 | **0.97** | 0.94 | **0.97** |
+| Semantic | 115 | 233 | 233 | 0.80 | 0.93 | 0.87 | 0.92 |
+| Semantic + context | 115 | 233 | 233 | 0.87 | **0.97** | 0.92 | 0.96 |
+| Parent-child | 98 | 274 | 602 | **0.93** | **0.97** | **0.95** | **0.97** |
+| Parent-child + context | 98 | 274 | 602 | **0.93** | **0.97** | **0.95** | **0.97** |
+
+Wrote docs/results/leaderboard-nomic.json
